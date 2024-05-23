@@ -6,10 +6,12 @@ describe('ModalDialogComponent', () => {
   let component: ModalDialogComponent;
   let fixture: ComponentFixture<ModalDialogComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [ModalDialogComponent]
-    });
+    })
+    .compileComponents();
+    
     fixture = TestBed.createComponent(ModalDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

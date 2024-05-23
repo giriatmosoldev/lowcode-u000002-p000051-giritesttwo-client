@@ -6,10 +6,12 @@ describe('SidePanelComponent', () => {
   let component: SidePanelComponent;
   let fixture: ComponentFixture<SidePanelComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [SidePanelComponent]
-    });
+    })
+    .compileComponents();
+    
     fixture = TestBed.createComponent(SidePanelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

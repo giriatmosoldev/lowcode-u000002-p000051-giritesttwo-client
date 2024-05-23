@@ -6,10 +6,12 @@ describe('PageLoaderComponent', () => {
   let component: PageLoaderComponent;
   let fixture: ComponentFixture<PageLoaderComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [PageLoaderComponent]
-    });
+    })
+    .compileComponents();
+    
     fixture = TestBed.createComponent(PageLoaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
