@@ -6,12 +6,10 @@ describe('LayoutsComponent', () => {
   let component: LayoutsComponent;
   let fixture: ComponentFixture<LayoutsComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    TestBed.configureTestingModule({
       declarations: [LayoutsComponent]
-    })
-    .compileComponents();
-    
+    });
     fixture = TestBed.createComponent(LayoutsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
